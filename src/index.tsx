@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'react-app-polyfill/ie9';
-import App from './App';
+import 'normalize.css/normalize.css';
+import Home from './pages/Home';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+ReactDOM.render(<Home />, document.getElementById('root'));
