@@ -1,6 +1,7 @@
 body {
     --color-text: #333;
-    --color-background: #eb4d55;
-    --color-main: #fae3d9;
-    --color-highlight: #f6e1e1;
+    --color-header: #e1eef6;
+    --color-background: #fcbe32;
+    --color-main: #e1eef6;
+    --color-highlight: #ff5f2e;
 }
