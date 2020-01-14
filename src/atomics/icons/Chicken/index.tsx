@@ -5,8 +5,8 @@ import { ReactComponent as ChickenIcon } from '../../../assets/icon/chicken.svg'
 const ChickenStyle = styled(ChickenIcon)<{ size: string }>`
     opacity: 0.3;
     width: ${(props) => props.size};
-    
-    .card:hover &{
+
+    .card:hover & {
         opacity: 1;
     }
 `;
