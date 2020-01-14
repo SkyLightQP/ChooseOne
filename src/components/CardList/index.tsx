@@ -1,9 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import Card from '../Card';
 import Pizza from '../../atomics/icons/Pizza';
 import VerticalLine from '../../atomics/VerticalLine';
 import Chicken from '../../atomics/icons/Chicken';
+import Jajangmyeon from '../../atomics/icons/Jajangmyeon';
+import Noodle from '../../atomics/icons/Noodle';
+import Plus from '../../atomics/icons/Plus';
 
 const CardListStyle = styled.div`
     display: flex;
@@ -18,6 +22,7 @@ const IconWrapperStyle = styled.div`
     display: flex;
     flex: 1;
     justify-content: center;
+    align-self: center;
 `;
 
 const CardList: React.FC = () => {
@@ -32,8 +37,18 @@ const CardList: React.FC = () => {
                     <Chicken size="7rem" />
                 </IconWrapperStyle>
             </Card>
-            <Card />
-            <Card />
+            <Card>
+                <IconWrapperStyle>
+                    <Jajangmyeon size="7rem" />
+                </IconWrapperStyle>
+                <VerticalLine />
+                <IconWrapperStyle>
+                    <Noodle size="7rem" />
+                </IconWrapperStyle>
+            </Card>
+            <Card>
+                <Plus size="4x" />
+            </Card>
         </CardListStyle>
     );
 };
