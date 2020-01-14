@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Pizza from '../../atomics/icons/Pizza';
-import Chicken from '../../atomics/icons/Chicken';
 
 const CardContainer = styled.div`
     display: flex;
@@ -17,16 +15,17 @@ const CardContainer = styled.div`
 `;
 
 const CardBodyStyle = styled.div`
+    display: flex;
     flex-direction: row;
+    flex: 1;
+    align-self: center;
+    justify-content: center;
 `;
 
-const Card: React.FC = () => {
+const Card: React.FC = ({ children }) => {
     return (
         <CardContainer className="card">
-            <CardBodyStyle>
-                <Pizza size="10rem" />
-                <Chicken size="10rem" />
-            </CardBodyStyle>
+            <CardBodyStyle>{children}</CardBodyStyle>
         </CardContainer>
     );
 };
