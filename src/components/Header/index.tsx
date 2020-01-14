@@ -6,8 +6,16 @@ import { useVisited } from '../../hooks/useVisited';
 import SubTitle from '../../atomics/SubTitle';
 
 const HeaderStyle = styled.header`
-    margin-top: 4rem;
-    margin-left: 1rem;
+    display: flex;
+    height: 18rem;
+    background-color: var(--color-highlight);
+    margin-bottom: 2rem;
+`;
+
+const WrapperStyle = styled.div`
+    flex: 1;
+    margin: auto;
+    align-items: center;
 `;
 
 const Header: React.FC = () => {
@@ -18,12 +26,14 @@ const Header: React.FC = () => {
 
     return (
         <HeaderStyle>
-            <Container>
-                <Title>
-                    Choose <i>One</i>
-                </Title>
-                {visited === 'true' ? <BasicSubTitle /> : <NewbieSubTitle />}
-            </Container>
+            <WrapperStyle>
+                <Container>
+                    <Title>
+                        Choose <i>One</i>
+                    </Title>
+                    {visited === 'true' ? <BasicSubTitle /> : <NewbieSubTitle />}
+                </Container>
+            </WrapperStyle>
         </HeaderStyle>
     );
 };
