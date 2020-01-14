@@ -13,6 +13,8 @@
 ## Commit Message Convention
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)을(를) 따릅니다.
 
+## Resources
+Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
 
 ## License
 `MIT License`
