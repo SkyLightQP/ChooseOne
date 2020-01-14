@@ -7,7 +7,7 @@ import SubTitle from '../../atomics/SubTitle';
 
 const HeaderStyle = styled.header`
     display: flex;
-    height: 18rem;
+    height: 20rem;
     background-color: var(--color-header);
     margin-bottom: 2rem;
 `;
@@ -25,7 +25,7 @@ const WrapperStyle = styled.div`
 const Header: React.FC = () => {
     const visited = useVisited();
 
-    const NewbieSubTitle = () => <SubTitle>두가지 선택지 중 고민된다면 이용해보세요!</SubTitle>;
+    const NewbieSubTitle = () => <SubTitle>둘 중 고민될 때 이용해보세요!<br/>원하는게 없으면 추가해보세요.</SubTitle>;
     const BasicSubTitle = () => <SubTitle>고민된다면? 골라드려요!</SubTitle>;
 
     return (
