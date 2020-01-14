@@ -7,6 +7,10 @@ import Container from '../utils/Container';
 const CardListStyle = styled.div`
     display: flex;
     flex-flow: row wrap;
+    
+    @media screen and (max-width: 1200px) {
+        display: block;
+    }
 `;
 
 const Home: React.FC = () => {
