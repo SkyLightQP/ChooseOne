@@ -5,7 +5,8 @@ import { ReactComponent as PizzaIcon } from '../../../assets/icon/pizza.svg';
 const PizzaStyle = styled(PizzaIcon)<{ size: string }>`
     opacity: 0.3;
     width: ${(props) => props.size};
-
+    height: ${(props) => props.size};
+    
     .card:hover & {
         opacity: 1;
     }
