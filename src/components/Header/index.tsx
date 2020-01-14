@@ -18,7 +18,7 @@ const WrapperStyle = styled.div`
     align-items: center;
     
     @media screen and (max-width: 1024px) {
-        margin-left: 2rem;
+        margin-left: 1rem;
     }    
 `;
 
