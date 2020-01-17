@@ -12,8 +12,6 @@ export const VisitedProvider: React.FC = ({ children }) => {
         } else {
             setVisit(localStorage.getItem('visited')!!);
         }
-
-
     }, []);
 
     return <context.Provider value={isVisit}>{children}</context.Provider>;
