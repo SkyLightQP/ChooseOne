@@ -14,7 +14,7 @@ interface DataContext {
 const context = createContext<DataContext>({} as DataContext);
 
 export const DataProvider: React.FC = ({ children }) => {
-    const [data, setData] = useState<DataStructure[]>([]);
+    const [data, setData] = useState<DataStructure[]>(JSON.parse(localStorage.getItem('data')!!) || []);
 
     const DataManager: DataContext = {
         put(first: any, second: any) {
@@ -35,6 +35,7 @@ export const DataProvider: React.FC = ({ children }) => {
         },
         remove() {
             const local = JSON.parse(localStorage.getItem('data')!!);
+
             local.pop();
 
             setData(local);
