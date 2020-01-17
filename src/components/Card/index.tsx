@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEventHandler } from "react";
 import styled from 'styled-components';
 
 const CardContainer = styled.div`
@@ -22,9 +22,13 @@ const CardBodyStyle = styled.div`
     justify-content: center;
 `;
 
-const Card: React.FC = ({ children }) => {
+interface CardProps {
+  readonly onClick?: React.MouseEventHandler;
+}
+
+const Card: React.FC<CardProps> = ({ children, onClick }) => {
     return (
-        <CardContainer className="card">
+        <CardContainer className="card" onClick={onClick}>
             <CardBodyStyle>{children}</CardBodyStyle>
         </CardContainer>
     );
